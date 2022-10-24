@@ -1,4 +1,4 @@
-const Anime = ({anime}) => {
+const Anime = ({truck}) => {
     return (  
     <div className="">{anime.character}</div>
     )

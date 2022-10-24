@@ -2,6 +2,7 @@ import { useState } from "react";
 import BlogList from "./BlogList";
 import Anime from "./anime";
 import Person from "./Person";
+import School from "./school";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
@@ -29,7 +30,11 @@ const Home = () => {
     { name: "Boko Haram", occupation: "Bomb country" },
   ]);
 
-  const [cars, setCars] = useState({ name: "lambo", engine: "v-16" });
+  const [name, setName] =useState([
+    {name:'ris'},
+    {name:'ris'},
+    {name:'ris'}
+  ])
   return (
     <div className="home">
       <BlogList games={blogs} />
@@ -40,6 +45,10 @@ const Home = () => {
 
       {persons.map((person) => (
         <Person person={person} />
+      ))}
+
+      {name.map((title)=>(
+        <School  truck={title}/>
       ))}
     </div>
   );

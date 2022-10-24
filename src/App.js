@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import Cars from './Cars';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 
     <div className="content">
      <Home/>
+
     </div>
     </div>
   );
